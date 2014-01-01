@@ -1,9 +1,9 @@
 var s3Uploader = (function () {
 
-    var s3URI = encodeURI("https://YOUR_S3_BUCKET_NAME.s3.amazonaws.com/"),
-        policyBase64 = "YOUR_BASE64_ENCODED_POLICY_FILE",
-        signature = "YOUR_BASE64_ENCODED_SIGNATURE",
-        awsKey = 'YOUR_AWS_USER_KEY',
+    var s3URI = encodeURI("https://ekobipictures.s3.amazonaws.com/"),
+        policyBase64 = "policy.json",
+        signature = "Vdn7uIFSYOIDZbkc4quGolAcqm8=",
+        awsKey = 'AKIAIJHRN4VL3AIFFGYQ',
         acl = "public-read";
 
     function upload(imageURI, fileName) {
